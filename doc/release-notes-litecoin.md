@@ -7,7 +7,7 @@ It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/devcoin-project/devcoin/issues>
+  <https://github.com/NarubyRiverlione/devcoin/issues>
 
 Compatibility
 ==============

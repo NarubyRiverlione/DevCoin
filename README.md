@@ -1,7 +1,7 @@
 Devcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/devcoin-project/devcoin.svg?branch=master)](https://travis-ci.org/devcoin-project/devcoin)
+[![Build Status](https://travis-ci.org/NarubyRiverlione/devcoin.svg?branch=master)](https://travis-ci.org/NarubyRiverlione/devcoin)
 
 https://devcoin.org
 
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/devcoin-project/devcoin/tags) are created
+completely stable. [Tags](https://github.com/NarubyRiverlione/devcoin/tags) are created
 regularly to indicate new official, stable release versions of Devcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

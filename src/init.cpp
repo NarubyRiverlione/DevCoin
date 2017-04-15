@@ -481,7 +481,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/devcoin-project/devcoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/NarubyRiverlione/devcoin>";
     const std::string URL_WEBSITE = "<https://devcoin.org>";
     // todo: remove urls from translations on next change
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +

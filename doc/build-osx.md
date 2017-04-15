@@ -25,7 +25,7 @@ Build Devcoin Core
 
 1. Clone the devcoin source code and cd into `devcoin`
 
-        git clone https://github.com/devcoin-project/devcoin
+        git clone https://github.com/NarubyRiverlione/devcoin
         cd devcoin
 
 2.  Build devcoin-core:

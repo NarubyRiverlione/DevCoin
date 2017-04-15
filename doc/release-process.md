@@ -21,10 +21,10 @@ Before every major release:
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/devcoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/devcoin-project/devcoin-detached-sigs.git
+    git clone https://github.com/NarubyRiverlione/gitian.sigs.ltc.git
+    git clone https://github.com/NarubyRiverlione/devcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/devcoin-project/devcoin.git
+    git clone https://github.com/NarubyRiverlione/devcoin.git
 
 ### Devcoin maintainers/release engineers, update version in sources
 
@@ -165,7 +165,7 @@ Commit your signature to gitian.sigs.ltc:
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [devcoin-detached-sigs](https://github.com/devcoin-project/devcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [devcoin-detached-sigs](https://github.com/NarubyRiverlione/devcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 

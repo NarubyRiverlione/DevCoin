@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/devcoin-project/devcoin.git"
+- "url": "https://github.com/NarubyRiverlione/devcoin.git"
   "dir": "devcoin"
 files: []
 script: |
