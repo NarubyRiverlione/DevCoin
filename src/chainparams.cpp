@@ -115,7 +115,7 @@ public:
         genesis = CreateGenesisBlock(1492187400, 0, 0x0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 //        assert(consensus.hashGenesisBlock == uint256S("0x"));
-//        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(genesis.hashMerkleRoot == uint256S("0x1c74e134ecaf0f637aebc718ea3372255d035ab47d09248c07c1b32e555d4d37"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("naruby.link", "dnsseed.naruby.link", true));
@@ -192,16 +192,15 @@ public:
         nDefaultPort = 19877;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1492187400, 0, 0x0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1492336800, 666340, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-//        assert(consensus.hashGenesisBlock == uint256S("0x"));
-//        assert(genesis.hashMerkleRoot == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("0x7ad0087fd2f3dccf3a129c07e9e4bc29c8c0569d0f827926051c2535db86b1d3"));
+        assert(genesis.hashMerkleRoot == uint256S("0x1c74e134ecaf0f637aebc718ea3372255d035ab47d09248c07c1b32e555d4d37"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         vSeeds.push_back(CDNSSeedData("naruby.link", "testnet-dnsseed.naruby.link"));
-//        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.devcoin.loshan.co.uk", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,90);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -221,11 +220,12 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x0")),
-            1492187400,
+            ( 0, uint256S("0x7ad0087fd2f3dccf3a129c07e9e4bc29c8c0569d0f827926051c2535db86b1d3")),
+            1492336800,
             0,
             0
         };
+
 
     }
 };
