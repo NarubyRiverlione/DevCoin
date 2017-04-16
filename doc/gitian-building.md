@@ -310,7 +310,7 @@ Clone the git repositories for devcoin and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/NarubyRiverlione/devcoin
-git clone https://github.com/NarubyRiverlione/gitian.sigs.ltc.git
+git clone https://github.com/NarubyRiverlione/gitian.sigs.dev.git
 ```
 
 Setting up the Gitian image
@@ -458,7 +458,7 @@ and follow the steps in the build process as normal.
     gpg: skipped "laanwj": secret key not available
 
 When you execute `gsign` you will get an error from GPG, which can be ignored. Copy the resulting `.assert` files
-in `gitian.sigs.ltc` to your signing machine and do
+in `gitian.sigs.dev` to your signing machine and do
 
 ```bash
     gpg --detach-sign ${VERSION}-linux/${SIGNER}/devcoin-linux-build.assert
@@ -473,5 +473,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs.ltc](https://github.com/NarubyRiverlione/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[gitian.sigs.dev](https://github.com/NarubyRiverlione/gitian.sigs.dev/) repository, or if that's not possible create a pull
 request. You can also mail the files to thrasher (thrasher@addictionsoftware.com) and he will commit them.
