@@ -1,78 +1,42 @@
-Devcoin Core integration/staging tree
-=====================================
+#Devcoin#
 
-[![Build Status](https://travis-ci.org/NarubyRiverlione/devcoin.svg?branch=master)](https://travis-ci.org/NarubyRiverlione/devcoin)
+**algorithm:**    scrypt
+**retarget:**     1 hour
+**blocktime:**    2.5 minute
+**max coins:**    20.000.000
+**coin maturity** 100
+**server port:**  9877
+**RPC port:**     9878
 
-https://devcoin.org
+**seed node**     138.68.178.80 
 
-What is Devcoin?
-----------------
+merkle root: 1c74e134ecaf0f637aebc718ea3372255d035ab47d09248c07c1b32e555d4d37
+pszTimestamp: Times 2017-04-14 Get a broader perspective on Brexit
+genesis hash: *not availible yet**
 
-Devcoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Devcoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Devcoin Core is the name of open source
-software which enables the use of this currency.
 
-For more information, as well as an immediately useable, binary version of
-the Devcoin Core software, see [https://devcoin.org](https://devcoin.org).
+### mining pool ###
+http://seed-devcoin.naruby.link:8080/stats
 
-License
--------
 
-Devcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+### testnet ###
+server=19877
+RPC=19878
+time= 1492336800
+bits: 0x1e0ffff0
+nonce: 666340
+genesis hash: 7ad0087fd2f3dccf3a129c07e9e4bc29c8c0569d0f827926051c2535db86b1d3
+retarget 10 min 
+blocktime: 1 min
+dnsseeder: testnet-dnsseed.naruby.link (NOP)
 
-Development Process
--------------------
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/NarubyRiverlione/devcoin/tags) are created
-regularly to indicate new official, stable release versions of Devcoin Core.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/devcoin-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #devcoin-dev.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write [unit tests](/doc/unit-tests.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`
-
-There are also [regression and integration tests](/qa) of the RPC interface, written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/qa) are installed) with: `qa/pull-tester/rpc-tests.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
-
-Translations
-------------
-
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Devcoin periodically.
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+### Regtest ####
+server=29877
+RPC=29878
+time: 1492187400
+bits: 0x1e0ffff0
+nonce: 1140556
+genesis hash: e80d1386865295fed1221c72bcd91c7eb3247ca97213a97ac88bdc73100948fd
+retarget *1 hour* (no retarget on regtest-
+blocktime: 1 minute
