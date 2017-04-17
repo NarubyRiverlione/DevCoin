@@ -1,4 +1,4 @@
-#Devcoin#
+# Devcoin #
 
 **algorithm:**    scrypt
 **retarget:**     1 hour
