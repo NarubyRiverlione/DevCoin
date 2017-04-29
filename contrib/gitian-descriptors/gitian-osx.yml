@@ -1,5 +1,5 @@
 ---
-name: "devcoin-osx-0.13"
+name: "devcoin-osx-1.0.0"
 enable_cache: true
 suites:
 - "trusty"

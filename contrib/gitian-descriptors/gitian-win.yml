@@ -1,5 +1,5 @@
 ---
-name: "devcoin-win-0.13"
+name: "devcoin-win-1.0.0"
 enable_cache: true
 suites:
 - "trusty"
