@@ -91,7 +91,6 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1485561600; // January 28, 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801; // January 31st, 2018
-
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1485561600; // January 28, 2017
@@ -112,13 +111,13 @@ public:
         nDefaultPort = 9877;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1492187400, 0, 0x0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1493469296, 1097160, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-//        assert(consensus.hashGenesisBlock == uint256S("0x"));
+        assert(consensus.hashGenesisBlock == uint256S("0x2e58f1a4f6c1ccb549d39720ebe7e15be112f378d3a03a8134549bda8b8aa5ba"));
         assert(genesis.hashMerkleRoot == uint256S("0x1c74e134ecaf0f637aebc718ea3372255d035ab47d09248c07c1b32e555d4d37"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("naruby.link", "dnsseed.naruby.link", true));
+        vSeeds.push_back(CDNSSeedData("naruby.link","dnsseed.naruby.link", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -137,8 +136,8 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0x0")),
-			1492187400, // * UNIX timestamp of last checkpoint block
+			(  0, uint256S("0x2e58f1a4f6c1ccb549d39720ebe7e15be112f378d3a03a8134549bda8b8aa5ba")),
+			1493469296, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
 			0.0     // * estimated number of transactions per day after checkpoint
@@ -200,7 +199,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("naruby.link", "testnet-dnsseed.naruby.link"));
+        vSeeds.push_back(CDNSSeedData("naruby.link","testnet-dnsseed.naruby.link"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,90);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
